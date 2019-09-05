@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About sphinxcontrib-openapi
 ===========================
 
@@ -22,8 +18,15 @@ to reinvent the wheel.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/sphinxcontrib-openapi-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/sphinxcontrib-openapi-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3571&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sphinxcontrib-openapi-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
