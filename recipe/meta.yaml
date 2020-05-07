@@ -1,5 +1,5 @@
 {% set name = "sphinxcontrib-openapi" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d5974b779104be45b56a759b2f096234d05f3db49469c7f6dc8ecdd82bfbf30a
+  sha256: 1c1bd10d7653912c59a42f727c62cbb7b75f7905ddd9ccc477ebfd1bc69f0cf3
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -34,7 +34,7 @@ about:
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A Sphinx extension to generate APIs docs from OpenAPI (fka Swagger) spec.'
+  summary: A Sphinx extension to generate APIs docs from OpenAPI (fka Swagger) spec.
   description: |
     sphinxcontrib-openapi is a Sphinx extension to generate APIs docs from
     OpenAPI (fka Swagger) spec. It depends on sphinxcontrib-httpdomain that
