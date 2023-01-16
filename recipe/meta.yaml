@@ -16,16 +16,18 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
     - setuptools_scm >=1.15
   run:
-    - python
+    - python >=3
     - sphinx >=2.0
     - sphinxcontrib-httpdomain >=1.5.0
     - PyYAML >=3.12
     - jsonschema >=2.5.1
-    - m2r >=0.2
+    - sphinx-mdinclude >=0.5.2
+    - picobox >=2.2
+    - deepmerge >=0.1
 
 test:
   imports:
