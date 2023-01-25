@@ -1,5 +1,5 @@
 {% set name = "sphinxcontrib-openapi" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1c1bd10d7653912c59a42f727c62cbb7b75f7905ddd9ccc477ebfd1bc69f0cf3
+  sha256: aced6a9684ce814e6a54751133203a520eeb0b750e8c80aa3d488527d46c2f30
 
 build:
   noarch: python
@@ -16,16 +16,18 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
     - setuptools_scm >=1.15
   run:
-    - python
+    - python >=3
     - sphinx >=2.0
     - sphinxcontrib-httpdomain >=1.5.0
     - PyYAML >=3.12
     - jsonschema >=2.5.1
-    - m2r >=0.2
+    - sphinx-mdinclude >=0.5.2
+    - picobox >=2.2
+    - deepmerge >=0.1
 
 test:
   imports:
