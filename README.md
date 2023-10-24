@@ -1,11 +1,11 @@
-About sphinxcontrib-openapi
-===========================
+About sphinxcontrib-openapi-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinxcontrib-openapi-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ikalnytskyi/sphinxcontrib-openapi
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinxcontrib-openapi-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Sphinx extension to generate APIs docs from OpenAPI (fka Swagger) spec.
 
@@ -154,4 +154,5 @@ Feedstock Maintainers
 =====================
 
 * [@carlodri](https://github.com/carlodri/)
+* [@conda-forge/sphinx](https://github.com/conda-forge/sphinx/)
 
