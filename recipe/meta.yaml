@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: df883808a5b5e4b4113ad697185c43a3f42df3dce70453af78ba7076907e9a20
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools_scm >=1.15
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - sphinx >=2.0
     - sphinxcontrib-httpdomain >=1.5.0
     - PyYAML >=3.12
@@ -30,6 +30,8 @@ requirements:
     - deepmerge >=0.1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sphinxcontrib.openapi
 
