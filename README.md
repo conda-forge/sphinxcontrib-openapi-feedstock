@@ -154,5 +154,5 @@ Feedstock Maintainers
 =====================
 
 * [@carlodri](https://github.com/carlodri/)
-* [@conda-forge/sphinx](https://github.com/conda-forge/sphinx/)
+* [@conda-forge/sphinx](https://github.com/orgs/conda-forge/teams/sphinx/)
 
