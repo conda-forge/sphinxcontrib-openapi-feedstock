@@ -37,7 +37,9 @@ tests:
   - python:
       imports:
         - sphinxcontrib.openapi
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 about:
   license: BSD-2-Clause
   license_file: LICENSE
